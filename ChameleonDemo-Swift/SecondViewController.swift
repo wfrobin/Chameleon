@@ -42,7 +42,7 @@ class SecondViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: tabBarController?.tabBar.tintColor ?? UIColor.gray]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: tabBarController?.tabBar.tintColor ?? UIColor.gray]
         navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor ?? UIColor.lightGray
         sampleOneImageView.image = #imageLiteral(resourceName: "SampleImageOne")
         sampleTwoImageView.image = #imageLiteral(resourceName: "SampleImageTwo")
@@ -54,18 +54,18 @@ class SecondViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: tabBarController?.tabBar.tintColor ?? UIColor.gray]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: tabBarController?.tabBar.tintColor ?? UIColor.gray]
         navigationController?.navigationBar.barTintColor = tabBarController?.tabBar.barTintColor ?? UIColor.lightGray
     }
     
     // Chameleon related
     func initChameleon() {
-        let sampleOneImageColors = ColorsFromImage(#imageLiteral(resourceName: "SampleImageOne"), withFlatScheme: true)
+        let sampleOneImageColors = ColorsFromImage(image: #imageLiteral(resourceName: "SampleImageOne"), withFlatScheme: true)
         print(sampleOneImageColors.count)
-        let sampleTwoImageColors = ColorsFromImage(#imageLiteral(resourceName: "SampleImageTwo"), withFlatScheme: true)
+        let sampleTwoImageColors = ColorsFromImage(image: #imageLiteral(resourceName: "SampleImageTwo"), withFlatScheme: true)
         print(sampleTwoImageColors.count)
-        let sampleOneImageAverageColor = AverageColorFromImage(#imageLiteral(resourceName: "SampleImageOne"))
-        let sampleTwoImageAverageColor = AverageColorFromImage(#imageLiteral(resourceName: "SampleImageTwo"))
+        let sampleOneImageAverageColor = AverageColorFromImage(image: #imageLiteral(resourceName: "SampleImageOne"))
+        let sampleTwoImageAverageColor = AverageColorFromImage(image: #imageLiteral(resourceName: "SampleImageTwo"))
         
         sampleOneAverageColorLabel.text = "Aa \u{25A0}"
         sampleOneAverageColorLabel.textColor = sampleOneImageAverageColor

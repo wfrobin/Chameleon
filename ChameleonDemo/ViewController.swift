@@ -14,6 +14,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = GradientColor(UIGradientStyle.leftToRight, frame: view.frame, colors: [UIColor.black, UIColor.yellow])
+        view.backgroundColor = GradientColor(gradientStyle: UIGradientStyle.leftToRight, frame: view.frame, colors: [UIColor.black, UIColor.yellow])
     }
 }

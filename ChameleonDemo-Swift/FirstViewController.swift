@@ -56,10 +56,10 @@ class FirstViewController: UITableViewController {
     func initChameleonColors() {
         
         let randomFlatColor = UIColor.randomFlat
-        let randomFlatColorContract = ContrastColorOf(randomFlatColor, returnFlat: true)
+        let randomFlatColorContract = ContrastColorOf(backgroundColor: randomFlatColor, returnFlat: true)
         // Nav bar
         navigationController?.navigationBar.barTintColor = randomFlatColor
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor.rawValue: randomFlatColorContract]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: randomFlatColorContract]
         // Tab bar
         tabBarController?.tabBar.barTintColor = randomFlatColor
         tabBarController?.tabBar.tintColor = randomFlatColorContract
@@ -70,10 +70,10 @@ class FirstViewController: UITableViewController {
         randomFlatColorLabel.textColor = randomFlatColor
         // Complementary flat color
         complementaryFlatColorLabel.text = "Aa \u{25A0}"
-        complementaryFlatColorLabel.textColor = ComplementaryFlatColorOf(randomFlatColor)
+        complementaryFlatColorLabel.textColor = ComplementaryFlatColorOf(color: randomFlatColor)
         // Contrast flat color
         contrastFlatColorLabel.text = "Aa \u{25A0}"
-        contrastFlatColorLabel.textColor = ContrastColorOf(randomFlatColor, returnFlat: true)
+        contrastFlatColorLabel.textColor = ContrastColorOf(backgroundColor: randomFlatColor, returnFlat: true)
         // Flattening non-flat color
         let randomColor = generateRandomColor() // custom method, not part of Chameleon
         flatteningNonFlatColorLabel.text = "Aa \u{25A0}"
@@ -90,8 +90,8 @@ class FirstViewController: UITableViewController {
         let firstRandomColor = UIColor.randomFlat
         let secondRandomColor = UIColor.randomFlat
         let thirdRandomColor = UIColor.randomFlat
-        let gradientColor = GradientColor(.leftToRight, frame: gradientColorLabel.frame, colors: [firstRandomColor, secondRandomColor, thirdRandomColor])
-        let gradientColorLargeFrame = GradientColor(.leftToRight, frame: gradientWithContrastLabel.frame, colors: [firstRandomColor, secondRandomColor, thirdRandomColor])
+        let gradientColor = GradientColor(gradientStyle: .leftToRight, frame: gradientColorLabel.frame, colors: [firstRandomColor, secondRandomColor, thirdRandomColor])
+        let gradientColorLargeFrame = GradientColor(gradientStyle: .leftToRight, frame: gradientWithContrastLabel.frame, colors: [firstRandomColor, secondRandomColor, thirdRandomColor])
         gradientColorLabel.text = "Aa \u{25A0}"
         gradientColorLabel.textColor = gradientColor
         // Gradient backgorund with contrast text
@@ -102,7 +102,7 @@ class FirstViewController: UITableViewController {
         gradientComponentColorThreeLabel.text = "\u{25A0}"
         gradientComponentColorThreeLabel.textColor = thirdRandomColor
         gradientWithContrastLabel.text = "FANCY COLOR"
-        gradientWithContrastLabel.textColor = ContrastColorOf(gradientColorLargeFrame, returnFlat: true)
+        gradientWithContrastLabel.textColor = ContrastColorOf(backgroundColor: gradientColorLargeFrame, returnFlat: true)
         gradientWithContrastLabel.backgroundColor = gradientColorLargeFrame
         gradientWithContrastLabel.layer.masksToBounds = true
         gradientWithContrastLabel.layer.cornerRadius = 8
@@ -119,7 +119,7 @@ class FirstViewController: UITableViewController {
         let green = Float(arc4random_uniform(256))/255.0
         let blue = Float(arc4random_uniform(256))/255.0
         
-        return UIColor(colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
+        return UIColor(_colorLiteralRed: red, green: green, blue: blue, alpha: 1.0)
     }
 }
 
