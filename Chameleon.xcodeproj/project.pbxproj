@@ -138,12 +138,12 @@
 		247EB8B51BB61EB3009B4904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D08EC91F00953A00D9F1A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		24D08ECA1F00953A00D9F1A7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		325FC40623A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		325FC40723A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		325FC40823A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		325FC40923A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		325FC40A23A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		325FC40B23A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		32F5603825030BE900F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		32F5603925030BE900F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		32F5603D25030BEA00F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "../ChameleonDemo-ObjC/zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,7 +546,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0C8DABBD1C07B5EA00B28FE2 /* Base */,
-				325FC40823A4668F00359368 /* zh-Hans */,
+				32F5603D25030BEA00F2501D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -564,7 +564,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				246493001F0094DB001E4F26 /* Base */,
-				325FC40A23A4668F00359368 /* zh-Hans */,
+				32F5603925030BE900F2501D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -582,7 +582,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				247EB8AE1BB61EB3009B4904 /* Base */,
-				325FC40623A4668F00359368 /* zh-Hans */,
+				32F5603825030BE900F2501D /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
