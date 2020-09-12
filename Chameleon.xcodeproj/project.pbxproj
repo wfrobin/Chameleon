@@ -138,11 +138,8 @@
 		247EB8B51BB61EB3009B4904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D08EC91F00953A00D9F1A7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		24D08ECA1F00953A00D9F1A7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		325A21DB2507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		325A21DC2507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		325A21DD2507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		325A21DE2507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		325A21DF2507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		325A21E02507B468001B9077 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		325FC40723A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		325FC40923A4668F00359368 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -153,6 +150,9 @@
 		328315AC250CB1840023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		328315AD250CB1850023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		328315AE250CB1860023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		32831659250D03CB0023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3283165C250D03CC0023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = ja.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3283165D250D03CD0023F54D /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = ja; path = "../ChameleonDemo-ObjC/ja.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		32F5603825030BE900F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		32F5603925030BE900F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		32F5603D25030BEA00F2501D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "../ChameleonDemo-ObjC/zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
@@ -559,8 +559,8 @@
 			children = (
 				0C8DABBD1C07B5EA00B28FE2 /* Base */,
 				32F5603D25030BEA00F2501D /* zh-Hans */,
-				325A21DD2507B468001B9077 /* ja */,
 				328315AB250CB1830023F54D /* ja */,
+				3283165D250D03CD0023F54D /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -581,8 +581,8 @@
 			children = (
 				246493001F0094DB001E4F26 /* Base */,
 				32F5603925030BE900F2501D /* zh-Hans */,
-				325A21DF2507B468001B9077 /* ja */,
 				328315AD250CB1850023F54D /* ja */,
+				3283165C250D03CC0023F54D /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -603,8 +603,8 @@
 			children = (
 				247EB8AE1BB61EB3009B4904 /* Base */,
 				32F5603825030BE900F2501D /* zh-Hans */,
-				325A21DB2507B468001B9077 /* ja */,
 				328315A9250CB1800023F54D /* ja */,
+				32831659250D03CB0023F54D /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
